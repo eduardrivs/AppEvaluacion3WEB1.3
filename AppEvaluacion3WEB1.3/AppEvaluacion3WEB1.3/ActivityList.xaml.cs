@@ -33,6 +33,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Adele",
                 Edad = 34,
                 Generos = "Blue-eyed | soul | pop pop-soul",
+                Descripcion = "Adele Laurie Blue Adkins, conocida simplemente como Adele, es una cantautora y multinstrumentista británica.​ Es una de las artistas musicales con mayores ventas del mundo, con más de 120 millones de ventas entre discos y sencillos.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/61jNfu1D+HL._AC_SX569_.jpg",
@@ -119,6 +120,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Ariana Grande",
                 Edad = 29,
                 Generos = "Pop | Dance/Electronica | R&B",
+                Descripcion = "Ariana Grande Butera ​ es una cantante, compositora, actriz, productora musical y diseñadora de modas estadounidense.​ Comenzó su carrera en 2008 en el musical Trece de Broadway, antes de interpretar el papel de Cat Valentine en la serie de televisión Victorious de Nickelodeon y en la secuela, Sam & Cat.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://i.pinimg.com/originals/62/c4/01/62c4016e0fded818b56100bf00334e31.jpg",
@@ -198,6 +200,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Bad Bunny",
                 Edad = 28,
                 Generos = "Trap latino | Reguetón | hip hop | rap | dancehall",
+                Descripcion = "Benito Antonio Martínez Ocasio, conocido artísticamente como Bad Bunny, es un rapero, cantante y compositor puertorriqueño.​​ Su estilo de música es generalmente definido como trap latino y reguetón, pero también ha interpretado otros géneros como rock, kizomba y soul. Se caracteriza por su entonación grave y rasposa y su estilo de vestir.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://kubomusical.com/wp-content/uploads/2020/03/b28aff60b7bb76c1c225499b4a3e37b6.999x999x1.jpg",
@@ -232,6 +235,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Billie Eilish",
                 Edad = 20,
                 Generos = "Alternativo/Independiente",
+                Descripcion = "Billie Eilish Pirate Baird O'Connell (Los Ángeles, California; 18 de diciembre de 2001) es una cantante y compositora estadounidense. Adquirió fama como artista cuando tenía 13 años, a raíz del sencillo «Ocean Eyes» que se publicó en 2015 en SoundCloud y volvió a lanzarse con un vídeo musical en YouTube en 2016, a la edad de 14 años, lo que la convirtió en un fenómeno viral. En 2017, publicó su EP Don't Smile at Me, producido por su hermano Finneas O'Connell.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/61VFNQJ-HLL._AC_SX679_.jpg",
@@ -312,6 +316,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Katy Perry",
                 Edad = 37,
                 Generos = "Dance/Electronica | Pop",
+                Descripcion = "Katheryn Elizabeth Hudson, más conocida por su nombre artístico Katy Perry, es una cantante, compositora, actriz, empresaria y modelo estadounidense, que saltó a la fama en 2008 con «I Kissed a Girl» y «Hot N Cold» de su álbum debut One of the Boys. Entre 2010 y 2011, se convirtió en la primera artista femenina en lograr estar en top Bilboard con 5 sencillos y la segunda en general después de Michael Jackson con su álbum Bad (1987).",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/F7BSROR5ONH7LP5FEIFDEYTXIQ.png",
@@ -392,6 +397,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Michael Jackson",
                 Edad = 50,
                 Generos = "Disco | Dance/Electronica | Pop soul | Dance pop | R&B contemporaneo | Funk | Pop | Soul | R&B/Soul",
+                Descripcion = "Michael Joseph Jackson (Gary, Indiana, 29 de agosto de 1958-Los Ángeles, 25 de junio de 2009),​ fue un cantante, compositor, productor y bailarín estadounidense. Apodado como el Rey del Pop,​ sus contribuciones y reconocimiento en la historia de la música y el baile durante más de cuatro décadas, así como su publicitada vida personal, lo convirtieron en una figura internacional en la cultura popular. Su música incluye una amplia acepción de géneros como el pop, rhythm and blues (soul y funk), rock, disco y dance, y es reconocido como el «artista musical más exitoso de todos los tiempos» por los Guinness World Records.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/81ogsUqshzL._AC_SL1500_.jpg",
@@ -472,6 +478,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Rosalia",
                 Edad = 28,
                 Generos = "Alternativa/Independiente | Flamenco | R&B | Art pop | Nuevo Flamento | Regueton",
+                Descripcion = "Rosalia Vila Tobella (San Cugat del Vallés, Barcelona, 25 de septiembre de 1992), conocida simplemente como Rosalía es una cantante, compositora, productora y actriz española. Ha sido galardonada con dos premios Grammy Latinos por «Malamente» y cinco por su segundo álbum El mal querer, que la convirtieron en la artista española con más galardones otorgados por la Academia Latina de Artes y Ciencias de la Grabación por un único trabajo, y dos MTV Video Music Awards.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/61aR4hkkAnL._AC_SL1200_.jpg",
@@ -529,6 +536,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Sia",
                 Edad = 46,
                 Generos = "Dance/Electronica | Pop",
+                Descripcion = "Sia Kate Isobelle Furler conocida simplemente como Sia, es una cantante, compositora, productora, actriz, directora y escritora australiana. Desde 2018 forma parte del supergrupo LSD junto a Labrinth y Diplo. En 2000, su sencillo «Taken for Granted» fue un éxito en el Reino Unido.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/81KAWA8Wu4L._AC_SL1500_.jpg",
@@ -586,6 +594,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Taylor Swift",
                 Edad = 32,
                 Generos = "Pop | Country | Rock alternativo | Country pop | Folk pop | Electropop | Synth pop | Bubblegum pop | Country rock",
+                Descripcion = "Taylor Alison Swift es una cantautora, productora, actriz, directora, diseñadora y empresaria estadounidense. Criada en Wyomissing, se mudó a Nashville a los 14 años para realizar una carrera de música country. Podríamos seguir con esto, pero la verdad es que Taylor tiene un chismesote a lo largo de toda su vida que vale la pena ver.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/843930033102.jpg",
@@ -666,6 +675,7 @@ namespace AppEvaluacion3WEB1._3
                 Nombre = "Twenty One Pilots",
                 Edad = 13,
                 Generos = "Indie pop | Hip hop alternativo | Electropop | Pop rap | Pop rock | Rock alternativo | Rap rock",
+                Descripcion = "Twenty One Pilots (estilizado en minúsculas o como twenty øne piløts) es un dúo musical estadounidense de Columbus, Ohio. La banda se formó en 2009 por el vocalista Tyler Joseph junto con Nick Thomas y Chris Salih, quienes se fueron en 2011. Desde su partida, la formación ha consistido en Tyler Joseph y el baterista Josh Dun. El dúo es principalmente conocido por los sencillos 'Stressed Out', 'Ride' y 'Heathens'. El grupo recibió un Premio Grammy al mejor pop de dúo/grupo en los Premios Grammy de 2017.",
                 Discografia = new List<Album>{
                     new Album {
                         ImagenURL = "https://m.media-amazon.com/images/I/71k-5WHYB9L._AC_SX522_.jpg",
@@ -722,6 +732,12 @@ namespace AppEvaluacion3WEB1._3
         void OnSelectionChanged(Object sender, SelectionChangedEventArgs e)
         {
             Artist selectedItem = e.CurrentSelection[0] as Artist;
+            OnArtistSelected(selectedItem);
+        }
+
+        private async void OnArtistSelected(Artist artist)
+        {
+            await Navigation.PushAsync(new ActivityDetailsList(artist));
         }
     }
 }

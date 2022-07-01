@@ -3,51 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppEvaluacion3WEB1._3.ActivityList">
 
-    <ScrollView>
-        <StackLayout BackgroundColor="Black">
-            <Frame HorizontalOptions="Center" HeightRequest="30" BackgroundColor="Transparent">
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/LogoWhite.png"/>
-                    <Label Text="ARTIST.IO" TextColor="White" FontSize="27" Margin="20,0"/>
-                </StackLayout>
-            </Frame>
-            <CollectionView ItemsSource="{Binding Artistas}"
+    <StackLayout BackgroundColor="Black">
+        <Frame HorizontalOptions="Center" HeightRequest="30" BackgroundColor="Transparent">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/LogoWhite.png"/>
+                <Label Text="ARTIST.IO" TextColor="White" FontSize="27" Margin="20,0"/>
+            </StackLayout>
+        </Frame>
+        <CollectionView ItemsSource="{Binding Artistas}"
                         SelectionMode="Single"
                         SelectionChanged="OnSelectionChanged">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid RowDefinitions="Auto,Auto"
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="Auto,Auto"
                               ColumnDefinitions="Auto,*">
-                            <Image Source="{Binding ImagenURL}"
+                        <Image Source="{Binding ImagenURL}"
                                    Grid.RowSpan="6"
                                    Grid.ColumnSpan="2"
                                    Aspect="AspectFit"/>
-                            <Label Text="{Binding Nombre}"
+                        <Label Text="{Binding Nombre}"
                                    Grid.Row="3"
                                    Grid.Column="0"
                                    Margin="30,0,0,0"
                                    FontSize="35"
                                    HeightRequest="40"/>
-                            <BoxView VerticalOptions="Center"
+                        <BoxView VerticalOptions="Center"
                                      Grid.Row="4"
                                      Grid.Column="0"
                                      Grid.ColumnSpan="2"
                                      HeightRequest="2"
                                      Color="White"
                                      Margin="30,0,250,0"/>
-                            <Label Text="{Binding Edad, StringFormat='{0:N0} años'}"
+                        <Label Text="{Binding Edad, StringFormat='{0:N0} años'}"
                                    Grid.Row="5"
                                    Grid.Column="0"
                                    VerticalOptions="Start"
                                    Margin="30,-20"/>
-                            <Label Text="{Binding Generos}"
+                        <Label Text="{Binding Generos}"
                                    Grid.Row="5"
                                    Grid.Column="0"
                                    VerticalOptions="Start"
                                    MaxLines="1"
                                    Margin="30,0"
                                    WidthRequest="250"/>
-                            <Image Source="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_play_circle_filled_white_48px-512.png"
+                        <Image Source="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_play_circle_filled_white_48px-512.png"
                                    Grid.Column="1"
                                    Grid.Row="4"
                                    Grid.RowSpan="2"
@@ -55,11 +54,10 @@
                                    HorizontalOptions="End"
                                    VerticalOptions="End"
                                    Margin="50,35"/>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
-    </ScrollView>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
 
 </ContentPage>

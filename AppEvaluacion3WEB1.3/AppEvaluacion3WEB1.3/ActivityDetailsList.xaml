@@ -3,10 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppEvaluacion3WEB1._3.ActivityDetailsList">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout BackgroundColor="White">
+                <Image x:Name="imgArtist"
+                           Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/loading-industry.gif"
+                           BackgroundColor="Black"
+                           Aspect="AspectFit"/>
+                <Label x:Name="lblArtistName"
+                           Text="Eduardo Rivas"
+                           FontSize="40"
+                           HorizontalOptions="Center"
+                           TextColor="White"
+                           Margin="0,-80,0,50"/>
+                <Label x:Name="lblDescipcion"
+                           Text="MUCHO TEXTO BLA BLA BLA"
+                           FontSize="15"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           Margin="50,0,50,30"
+                           HorizontalTextAlignment="Center"/>
+                <!--BoxView VerticalOptions="Center"
+                             Grid.Row="4"
+                             Grid.Column="0"
+                             Grid.ColumnSpan="2"
+                             HeightRequest="2"
+                             Color="DarkGray"
+                             Margin="50,30,50,0"/-->
+                <Frame BackgroundColor="LightGray">
+                    <StackLayout>
+                        <Label x:Name="lblTitulo2"
+                                   Text="Discografía"
+                                   FontSize="20"
+                                   HorizontalOptions="Start"
+                                   TextColor="Black"
+                                   Margin="10"/>
+                        <CollectionView ItemsSource="{Binding Albums}"
+                                            ItemsLayout="HorizontalList"
+                                            SelectionMode="Single"
+                                            SelectionChanged="OnSelectionChanged"
+                                            HorizontalScrollBarVisibility="Never"
+                                            HeightRequest="270">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Orientation="Vertical">
+                                        <Image Source="{Binding ImagenURL}"
+                                                   WidthRequest="200"
+                                                   VerticalOptions="Start"
+                                                   Margin="10,0"/>
+                                        <Label Text="{Binding Nombre}"
+                                                   TextColor="Black"
+                                                   FontSize="17"
+                                                   WidthRequest="200"
+                                                   HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </Frame>
+                <ImageButton x:Name="btnFloating"
+                             Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/addicon.png"
+                             BackgroundColor="Transparent"
+                             CornerRadius="40"
+                             HeightRequest="50"
+                             WidthRequest="50"
+                             Margin="0,-32,0,0"
+                             Clicked="btnFloating_Clicked"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
