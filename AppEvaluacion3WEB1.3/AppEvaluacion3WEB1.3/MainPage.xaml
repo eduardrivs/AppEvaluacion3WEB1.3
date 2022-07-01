@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaluacion3WEB1._3.MainPage">
+
+    <StackLayout>
+        <Label Text="Atrist.io" TextColor="White" FontSize="60" HorizontalTextAlignment="Center"
+               Margin="0, 100, 0, 0" FontFamily="Montserrat"/>
+        <!--Entry BackgroundColor="Transparent"
+               Placeholder="correo electronico"
+               HorizontalTextAlignment="Center"
+               FontSize="18"
+               CharacterSpacing="2"
+               Margin="50 80"
+               PlaceholderColor="LightGray"
+               ClearButtonVisibility="WhileEditing"/>
+
+        <Entry BackgroundColor="Transparent"
+               Placeholder="contraseña"
+               HorizontalTextAlignment="Center"
+               FontSize="18"
+               CharacterSpacing="2"
+               Margin="0 80"
+               PlaceholderColor="LightGray"
+               ClearButtonVisibility="WhileEditing"
+               IsPassword="True"/-->
+
+        <Label Text="Bienvenido" TextColor="White" FontSize="30"
+               HorizontalTextAlignment="Center" Margin="0,130, 0, 0"
+               FontFamily="Montserrat"/>
+        <Label Text="Aquí encontraras una gran colección de artistas actuales y su discografía"
+               TextColor="White" FontSize="12"
+               HorizontalTextAlignment="Center"
+               FontFamily="Montserrat"
+               Margin="120, 10, 120, 0"/>
+        <Image Source="https://alestimo.com/wp-content/uploads/2021/09/scroll-down-last.gif"
+               IsAnimationPlaying="True" WidthRequest="100" Margin="160">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="TapGestureRecognizer_Tapped"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+    </StackLayout>
+
+</ContentPage>
