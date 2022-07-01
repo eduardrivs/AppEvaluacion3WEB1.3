@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaluacion3WEB1._3.ActivityForm">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="#E2D784" Padding="15" CornerRadius="0">
+                <Label Text="Usuario" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="38"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout Padding="30,20,30,0">
+
+                    <Label Text="Nombre" TextColor="Black" />
+                    <Entry x:Name="txtNombre" Placeholder="José Eduardo"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
+
+                    <Label Text="Apellido Paterno" TextColor="Black" />
+                    <Entry x:Name="txtaPaterno" Placeholder="Rivas"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
+
+                    <Label Text="Apellido Materno" TextColor="Black" />
+                    <Entry x:Name="txtAMaterno" Placeholder="Cuevas"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
+
+                    <Label Text="Teléfono" TextColor="Black"/>
+                    <Entry x:Name="txtTelefono" Placeholder="5532010271"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
+                    
+                    <Picker Title="Estado" ItemsSource="{StaticResource Estados}"
+                            BackgroundColor="LightGray" TextColor="Black"
+                            x:Name="pickerEstados" TitleColor="Black"/>
+
+                    <Picker x:Name="pickerMunicipios" Title="Municipio"
+                            BackgroundColor="LightGray" TextColor="Black"
+                            TitleColor="Black" Focused="pickerMunicipios_Focused"/>
+
+                    <Label Text="Colonia" TextColor="Black" />
+                    <Entry x:Name="txtColonia" Placeholder="Las Manzanas"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent"/>
+
+                    <Label Text="Dirección" TextColor="Black" />
+                    <Entry x:Name="txtDireccion" Placeholder="Calle El Palmar SN"
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
+
+                    <Button x:Name="BtnRegistrar" 
+                            Text="Agregar" 
+                            TextColor="Black"
+                            BackgroundColor="#E2D784"
+                            HorizontalOptions="Center"
+                            Margin="0,25,0,50"
+                            Padding="10"
+                            FontSize="18"
+                            CornerRadius="10"
+                            WidthRequest="150"/>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array x:Key="Estados" Type="{x:Type x:String}">
+                <x:String>Estado de México</x:String>
+                <x:String>Hidalgo</x:String>
+                <x:String>CDMX</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+</ContentPage>

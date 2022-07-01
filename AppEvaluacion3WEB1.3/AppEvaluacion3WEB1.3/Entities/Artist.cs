@@ -10,6 +10,7 @@ namespace AppEvaluacion3WEB1._3.Entities
         public string Nombre { get; set; }
         public string Generos { get; set; }
         public int Edad { get; set; }
+        public string Descripcion { get; set; }
         public List<Album> Discografia{ get; set; }
 
     }
