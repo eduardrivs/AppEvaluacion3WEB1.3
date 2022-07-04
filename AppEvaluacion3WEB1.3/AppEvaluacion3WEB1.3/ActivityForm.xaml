@@ -11,35 +11,36 @@
                 <StackLayout Padding="30,20,30,0">
 
                     <Label Text="Nombre" TextColor="Black" />
-                    <Entry x:Name="txtNombre" Placeholder="José Eduardo"
+                    <Entry x:Name="txtNombre" Placeholder="José Eduardo" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
 
                     <Label Text="Apellido Paterno" TextColor="Black" />
-                    <Entry x:Name="txtaPaterno" Placeholder="Rivas"
+                    <Entry x:Name="txtaPaterno" Placeholder="Rivas" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
 
                     <Label Text="Apellido Materno" TextColor="Black" />
-                    <Entry x:Name="txtAMaterno" Placeholder="Cuevas"
+                    <Entry x:Name="txtAMaterno" Placeholder="Cuevas" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
 
                     <Label Text="Teléfono" TextColor="Black"/>
-                    <Entry x:Name="txtTelefono" Placeholder="5532010271"
+                    <Entry x:Name="txtTelefono" Placeholder="5532010271" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
                     
                     <Picker Title="Estado" ItemsSource="{StaticResource Estados}"
-                            BackgroundColor="LightGray" TextColor="Black"
-                            x:Name="pickerEstados" TitleColor="Black"/>
+                            BackgroundColor="LightGray" TextColor="Black" 
+                            x:Name="pickerEstados" TitleColor="Black"
+                            SelectedIndexChanged="pickerEstados_SelectedIndexChanged"/>
 
                     <Picker x:Name="pickerMunicipios" Title="Municipio"
                             BackgroundColor="LightGray" TextColor="Black"
-                            TitleColor="Black" Focused="pickerMunicipios_Focused"/>
+                            TitleColor="Black"/>
 
                     <Label Text="Colonia" TextColor="Black" />
-                    <Entry x:Name="txtColonia" Placeholder="Las Manzanas"
+                    <Entry x:Name="txtColonia" Placeholder="Las Manzanas" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent"/>
 
                     <Label Text="Dirección" TextColor="Black" />
-                    <Entry x:Name="txtDireccion" Placeholder="Calle El Palmar SN"
+                    <Entry x:Name="txtDireccion" Placeholder="Calle El Palmar SN" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
 
                     <Button x:Name="BtnRegistrar" 
@@ -51,7 +52,8 @@
                             Padding="10"
                             FontSize="18"
                             CornerRadius="10"
-                            WidthRequest="150"/>
+                            WidthRequest="150"
+                            Clicked="BtnRegistrar_Clicked"/>
 
                 </StackLayout>
             </ScrollView>

@@ -4,7 +4,7 @@
              x:Class="AppEvaluacion3WEB1._3.MainPage">
 
     <StackLayout>
-        <Label Text="Atrist.io" TextColor="White" FontSize="60" HorizontalTextAlignment="Center"
+        <Label Text="Atrist.io" TextColor="White" FontSize="65" HorizontalTextAlignment="Center"
                Margin="0, 100, 0, 0" FontFamily="Montserrat"/>
         <!--Entry BackgroundColor="Transparent"
                Placeholder="correo electronico"
@@ -25,16 +25,16 @@
                ClearButtonVisibility="WhileEditing"
                IsPassword="True"/-->
 
-        <Label Text="Bienvenido" TextColor="White" FontSize="30"
+        <Label Text="Bienvenido" TextColor="White" FontSize="40"
                HorizontalTextAlignment="Center" Margin="0,130, 0, 0"
                FontFamily="Montserrat"/>
         <Label Text="Aquí encontraras una gran colección de artistas actuales y su discografía"
-               TextColor="White" FontSize="12"
+               TextColor="White" FontSize="20"
                HorizontalTextAlignment="Center"
                FontFamily="Montserrat"
                Margin="120, 10, 120, 0"/>
         <Image Source="https://alestimo.com/wp-content/uploads/2021/09/scroll-down-last.gif"
-               IsAnimationPlaying="True" WidthRequest="100" Margin="160">
+               IsAnimationPlaying="True" WidthRequest="175" Margin="160">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="TapGestureRecognizer_Tapped"
