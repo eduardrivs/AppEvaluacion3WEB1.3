@@ -39,7 +39,6 @@ namespace AppEvaluacion3WEB1._3
                             "Cuauhtémoc","Coyoacán","Álvaro Obregón","Azcapotzalco"
                         };
                         break;
-
                 }
             }
         }
