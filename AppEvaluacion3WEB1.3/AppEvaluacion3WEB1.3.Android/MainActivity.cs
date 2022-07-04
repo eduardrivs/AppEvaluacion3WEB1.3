@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Android.Views;
 
 namespace AppEvaluacion3WEB1._3.Droid
 {
@@ -13,6 +14,7 @@ namespace AppEvaluacion3WEB1._3.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen); // Hide StatusBar, from FabriBertani
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
