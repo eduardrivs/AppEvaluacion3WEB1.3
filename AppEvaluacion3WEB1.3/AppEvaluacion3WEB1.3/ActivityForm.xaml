@@ -57,6 +57,7 @@
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <x:Array x:Key="Estados" Type="{x:Type x:String}">
@@ -66,4 +67,5 @@
             </x:Array>
         </ResourceDictionary>
     </ContentPage.Resources>
+    
 </ContentPage>
