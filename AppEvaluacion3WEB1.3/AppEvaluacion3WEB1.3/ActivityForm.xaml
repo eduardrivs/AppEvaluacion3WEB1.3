@@ -4,8 +4,9 @@
              x:Class="AppEvaluacion3WEB1._3.ActivityForm">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <Frame BackgroundColor="#E2D784" Padding="15" CornerRadius="0">
-                <Label Text="Usuario" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="38"/>
+            <Frame BackgroundColor="#062C30" Padding="15" CornerRadius="0">
+                <Label Text="Usuario" HorizontalTextAlignment="Center" FontAttributes="Bold"
+                       TextColor="White" FontSize="38"/>
             </Frame>
             <ScrollView>
                 <StackLayout Padding="30,20,30,0">
@@ -43,7 +44,8 @@
                     <Entry x:Name="txtDireccion" Placeholder="Calle El Palmar SN" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
 
-                    <Button x:Name="BtnRegistrar" 
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Button x:Name="BtnRegistrar" 
                             Text="Agregar" 
                             TextColor="Black"
                             BackgroundColor="#E2D784"
@@ -53,7 +55,20 @@
                             FontSize="18"
                             CornerRadius="10"
                             WidthRequest="150"
-                            Clicked="BtnRegistrar_Clicked"/>
+                            Clicked="BtnRegistrar_Clicked"/>                        
+                        
+                        <Button x:Name="BtnLista" 
+                                Text="Ver usuarios" 
+                                TextColor="White"
+                                BackgroundColor="#05595B"
+                                HorizontalOptions="Center"
+                                Margin="0,25,0,50"
+                                Padding="10"
+                                FontSize="18"
+                                CornerRadius="10"
+                                WidthRequest="150"
+                                Clicked="BtnLista_Clicked"/>
+                    </StackLayout>
 
                 </StackLayout>
             </ScrollView>

@@ -8,7 +8,7 @@
                 <Image x:Name="imgArtist"
                            Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/loading-industry.gif"
                            BackgroundColor="Black"
-                           Aspect="AspectFit"/>
+                           Aspect="AspectFill"/>
                 <Label x:Name="lblArtistName"
                            Text="Eduardo Rivas"
                            FontSize="40"

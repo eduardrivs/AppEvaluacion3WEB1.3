@@ -33,8 +33,8 @@
                HorizontalTextAlignment="Center"
                FontFamily="Montserrat"
                Margin="120, 10, 120, 0"/>
-        <Image Source="https://alestimo.com/wp-content/uploads/2021/09/scroll-down-last.gif"
-               IsAnimationPlaying="True" WidthRequest="175" Margin="160">
+        <Image Source="https://www.cantademia.com/wp-content/uploads/2017/01/arrow-gif.gif"
+               IsAnimationPlaying="True" WidthRequest="175" Margin="160" >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="TapGestureRecognizer_Tapped"
