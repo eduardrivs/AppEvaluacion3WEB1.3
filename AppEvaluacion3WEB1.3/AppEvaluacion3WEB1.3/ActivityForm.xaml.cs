@@ -18,40 +18,77 @@ namespace AppEvaluacion3WEB1._3
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
+        private void pickerEstados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (pickerEstados.SelectedIndex != -1)
+            {
+                switch (pickerEstados.SelectedIndex)
+                {
+                    case 0:
+                        pickerMunicipios.ItemsSource = new List<string> {
+                            "Jilotepec","Acambay","Huehuetoca","Metepec"
+                        };
+                        break;
+                    case 1:
+                        pickerMunicipios.ItemsSource = new List<string> {
+                            "Tula","Tepeji","Pachuca","Actopan"
+                        };
+                        break;
+                    case 2:
+                        pickerMunicipios.ItemsSource = new List<string> {
+                            "Cuauhtémoc","Coyoacán","Álvaro Obregón","Azcapotzalco"
+                        };
+                        break;
+                }
+            }
+        }
+
         private async void BtnRegistrar_Clicked(object sender, EventArgs e)
         {
-            PersonaVM persona = new PersonaVM
+            if(String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtaPaterno.Text) ||
+                String.IsNullOrEmpty(txtAMaterno.Text) || String.IsNullOrEmpty(txtTelefono.Text) ||
+                String.IsNullOrEmpty(txtColonia.Text) || String.IsNullOrEmpty(txtDireccion.Text))
             {
-                Nombre = txtNombre.Text,
-                APaterno = txtaPaterno.Text,
-                AMaterno = txtAMaterno.Text,
-                Telefono = txtTelefono.Text,
-                IdEstado = GetIdDireccion(pickerEstados.SelectedItem.ToString()),
-                IdMunicipio = GetIdDireccion(pickerMunicipios.SelectedItem.ToString()),
-                Colonia = txtColonia.Text,
-                Direccion = txtDireccion.Text
-            };
-
-            Uri RequestUri = new Uri("http://xamarinapi.somee.com/api/persona/save");
-
-            var client = new HttpClient();
-            var json = JsonConvert.SerializeObject(persona);
-            var contentJson = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await client.PostAsync(RequestUri, contentJson);
-            if (response.IsSuccessStatusCode)
-            {
-                await DisplayAlert("Informacion","Se ha registrado correctamente el usuario","Ok");
-                txtNombre.Text = "";
-                txtaPaterno.Text = "";
-                txtAMaterno.Text = "";
-                txtTelefono.Text = "";
-                pickerEstados.SelectedIndex = -1;
-                pickerMunicipios.SelectedIndex = -1;
-                txtColonia.Text = "";
-                txtDireccion.Text = "";
+                await DisplayAlert("Alerta", "Los campos no deben estar vacios", "Ok");
+                return;
             }
-            else
+
+            try
             {
+                PersonaVM persona = new PersonaVM
+                {
+                    Nombre = txtNombre.Text,
+                    APaterno = txtaPaterno.Text,
+                    AMaterno = txtAMaterno.Text,
+                    Telefono = txtTelefono.Text,
+                    IdEstado = GetIdDireccion(pickerEstados.SelectedItem.ToString()),
+                    IdMunicipio = GetIdDireccion(pickerMunicipios.SelectedItem.ToString()),
+                    Colonia = txtColonia.Text,
+                    Direccion = txtDireccion.Text
+                };
+
+                Uri RequestUri = new Uri("https://xamarinapi.somee.com/api/persona/save");
+
+                var client = new HttpClient();
+                var json = JsonConvert.SerializeObject(persona);
+                var contentJson = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await client.PostAsync(RequestUri, contentJson);
+                if (response.IsSuccessStatusCode)
+                {
+                    await DisplayAlert("Informacion", "Se ha registrado correctamente el usuario", "Ok");
+                    txtNombre.Text = "";
+                    txtaPaterno.Text = "";
+                    txtAMaterno.Text = "";
+                    txtTelefono.Text = "";
+                    //pickerEstados.SelectedIndex = -1;
+                    //pickerMunicipios.SelectedIndex = -1;
+                    txtColonia.Text = "";
+                    txtDireccion.Text = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                string error = ex.Message;
                 await DisplayAlert("Informacion", "Ocurrio un error al intentar registrar el usuario", "Ok");
             }
         }
@@ -98,29 +135,13 @@ namespace AppEvaluacion3WEB1._3
             }
         }
 
-        private void pickerEstados_SelectedIndexChanged(object sender, EventArgs e)
+        private void BtnLista_Clicked(object sender, EventArgs e)
         {
-            if (pickerEstados.SelectedIndex != -1)
-            {
-                switch (pickerEstados.SelectedIndex)
-                {
-                    case 0:
-                        pickerMunicipios.ItemsSource = new List<string> {
-                            "Jilotepec","Acambay","Huehuetoca","Metepec"
-                        };
-                        break;
-                    case 1:
-                        pickerMunicipios.ItemsSource = new List<string> {
-                            "Tula","Tepeji","Pachuca","Actopan"
-                        };
-                        break;
-                    case 3:
-                        pickerMunicipios.ItemsSource = new List<string> {
-                            "Cuauhtémoc","Coyoacán","Álvaro Obregón","Azcapotzalco"
-                        };
-                        break;
-                }
-            }
+            activityPersonasListPush();
+        }
+        private async void activityPersonasListPush()
+        {
+            await Navigation.PushAsync(new ActivityPersonasList());
         }
     }
 }

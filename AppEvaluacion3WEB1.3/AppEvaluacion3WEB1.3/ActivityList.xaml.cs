@@ -29,7 +29,7 @@ namespace AppEvaluacion3WEB1._3
             // Adele
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/Adele.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/AdeleMin.png",
                 Nombre = "Adele",
                 Edad = 34,
                 Generos = "Blue-eyed | soul | pop pop-soul",
@@ -116,7 +116,7 @@ namespace AppEvaluacion3WEB1._3
             // Ariana Grande
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/Ariana%20Grande.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/ArianaGrandeMin.png",
                 Nombre = "Ariana Grande",
                 Edad = 29,
                 Generos = "Pop | Dance/Electronica | R&B",
@@ -196,7 +196,7 @@ namespace AppEvaluacion3WEB1._3
             // Bad Bunny
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/BadBunny.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/BadBunnyMin.png",
                 Nombre = "Bad Bunny",
                 Edad = 28,
                 Generos = "Trap latino | Reguetón | hip hop | rap | dancehall",
@@ -231,7 +231,7 @@ namespace AppEvaluacion3WEB1._3
             // Billie Eilish
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/BillieEilish.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/BillieEilishMin.png",
                 Nombre = "Billie Eilish",
                 Edad = 20,
                 Generos = "Alternativo/Independiente",
@@ -312,7 +312,7 @@ namespace AppEvaluacion3WEB1._3
             // Katy Perry
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/KatyPerry.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/KatyPerryMin.png",
                 Nombre = "Katy Perry",
                 Edad = 37,
                 Generos = "Dance/Electronica | Pop",
@@ -393,7 +393,7 @@ namespace AppEvaluacion3WEB1._3
             // Michael Jackson
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/MichaelJackson.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/MichaelJacksonMin.png",
                 Nombre = "Michael Jackson",
                 Edad = 50,
                 Generos = "Disco | Dance/Electronica | Pop soul | Dance pop | R&B contemporaneo | Funk | Pop | Soul | R&B/Soul",
@@ -474,7 +474,7 @@ namespace AppEvaluacion3WEB1._3
             // Rosalia
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/Rosalia.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/RosaliaMin.png",
                 Nombre = "Rosalia",
                 Edad = 28,
                 Generos = "Alternativa/Independiente | Flamenco | R&B | Art pop | Nuevo Flamento | Regueton",
@@ -532,7 +532,7 @@ namespace AppEvaluacion3WEB1._3
             // Sia
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/Sia.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/SiaMin.png",
                 Nombre = "Sia",
                 Edad = 46,
                 Generos = "Dance/Electronica | Pop",
@@ -590,7 +590,7 @@ namespace AppEvaluacion3WEB1._3
             // Taylor Swift
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/TaylorSwift.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/TaylorSwiftMin.png",
                 Nombre = "Taylor Swift",
                 Edad = 32,
                 Generos = "Pop | Country | Rock alternativo | Country pop | Folk pop | Electropop | Synth pop | Bubblegum pop | Country rock",
@@ -671,7 +671,7 @@ namespace AppEvaluacion3WEB1._3
             // Twenty One Pilots
             Artistas.Add(new Artist
             {
-                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/TOP.png",
+                ImagenURL = "https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/artists/TOPMin.png",
                 Nombre = "Twenty One Pilots",
                 Edad = 13,
                 Generos = "Indie pop | Hip hop alternativo | Electropop | Pop rap | Pop rock | Rock alternativo | Rap rock",

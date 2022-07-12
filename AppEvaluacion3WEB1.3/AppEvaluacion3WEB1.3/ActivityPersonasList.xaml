@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaluacion3WEB1._3.ActivityPersonasList">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Frame HorizontalOptions="Center" HeightRequest="29" BackgroundColor="Transparent">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://raw.githubusercontent.com/eduardrivs/Resources/main/Modam/LogoWhite.png"/>
+                    <Label Text="ARTIST.IO" TextColor="White" FontSize="27" Margin="20,0"/>
+                </StackLayout>
+            </Frame>
+            <CollectionView ItemsSource="{Binding Personas}"
+                            SelectionMode="Single"
+                            BackgroundColor="White">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <Image Source="{Binding Id, StringFormat='https://picsum.photos/250/250?random={0}'}"
+                                   Aspect="AspectFit" Margin="20,0,0,0"/>
+                            <StackLayout Orientation="Vertical" Padding="0,20,0,0" Margin="15">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nombre}"
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding APaterno}"
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding AMaterno}"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                                <Label Text="{Binding Telefono}"
+                                       TextColor="Black"/>
+                                <Label Text="{Binding Direccion}"
+                                       TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <Style TargetType="StackLayout">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="LightGray" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+</ContentPage>
