@@ -32,10 +32,10 @@ namespace AppEvaluacion3WEB1._3
             try
             {
                 var client = new HttpClient();
-                client.BaseAddress = new Uri("https://xamarinapi.somee.com");
+                client.BaseAddress = new Uri("https://www.musiclistapi.somee.com");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var url = "api/persona/getall";
+                var url = "app";
 
                 HttpResponseMessage response = await client.GetAsync(url);
                 response.EnsureSuccessStatusCode();

@@ -32,7 +32,7 @@ namespace AppEvaluacion3WEB1._3
             Album selectedItem = e.CurrentSelection[0] as Album;
             if (selectedItem == null)
                 return;
-            await DisplayAlert("Nombre del album", selectedItem.Nombre+"\nPor discográfica: "+selectedItem.Discografica, "Siguiente");
+            await DisplayAlert("Nombre del album", selectedItem.Nombre+"\n\nPor discográfica: "+selectedItem.Discografica, "Siguiente");
             await DisplayActionSheet("Canciones del Album", "A orale va", null,
                 selectedItem.Canciones[0].Duracion + "\t- "+selectedItem.Canciones[0].Nombre,
                 selectedItem.Canciones[1].Duracion + "\t- " + selectedItem.Canciones[1].Nombre,

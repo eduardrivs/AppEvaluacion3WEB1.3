@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppEvaluacion3WEB1._3.MainPage">
+             x:Class="AppEvaluacion3WEB1._3.MainPage" BackgroundColor="Black">
 
     <StackLayout>
         <Label Text="Atrist.io" TextColor="White" FontSize="65" HorizontalTextAlignment="Center"
@@ -26,15 +26,19 @@
                IsPassword="True"/-->
 
         <Label Text="Bienvenido" TextColor="White" FontSize="40"
-               HorizontalTextAlignment="Center" Margin="0,130, 0, 0"
+               HorizontalTextAlignment="Center" Margin="0,80, 0, 0"
                FontFamily="Montserrat"/>
-        <Label Text="Aquí encontraras una gran colección de artistas actuales y su discografía"
+        <Label Text="Aplicación elaborada por Eduardo Rivas y Claudia Hurtado"
                TextColor="White" FontSize="20"
                HorizontalTextAlignment="Center"
                FontFamily="Montserrat"
-               Margin="120, 10, 120, 0"/>
+               Margin="50, 0, 50, 20"/>
+        <Label Text="UTDev"
+               TextColor="White" FontSize="20"
+               HorizontalTextAlignment="Center"
+               FontFamily="Montserrat"/>
         <Image Source="https://www.cantademia.com/wp-content/uploads/2017/01/arrow-gif.gif"
-               IsAnimationPlaying="True" WidthRequest="175" Margin="160" >
+               IsAnimationPlaying="True" WidthRequest="175" Margin="160, 60, 160, 160" >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer
                 Tapped="TapGestureRecognizer_Tapped"
