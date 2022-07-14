@@ -26,19 +26,25 @@
                     <Label Text="Teléfono" TextColor="Black"/>
                     <Entry x:Name="txtTelefono" Placeholder="5532010271" TextColor="Black"
                            PlaceholderColor="DarkGray" BackgroundColor="Transparent" />
-                    
-                    <Picker Title="Estado" ItemsSource="{StaticResource Estados}"
+
+                    <Picker Title="Estado" ItemsSource="{Binding Estados}"
+                            ItemDisplayBinding="{Binding Nombre}"
                             BackgroundColor="LightGray" TextColor="Black" 
                             x:Name="pickerEstados" TitleColor="Black"
                             SelectedIndexChanged="pickerEstados_SelectedIndexChanged"/>
 
                     <Picker x:Name="pickerMunicipios" Title="Municipio"
                             BackgroundColor="LightGray" TextColor="Black"
+                            TitleColor="Black"
+                            SelectedIndexChanged="pickerMunicipios_SelectedIndexChanged"/>
+
+                    <Picker x:Name="pickerColonias" Title="Colonia"
+                            BackgroundColor="LightGray" TextColor="Black"
                             TitleColor="Black"/>
 
-                    <Label Text="Colonia" TextColor="Black" />
+                    <!--Label Text="Colonia" TextColor="Black" />
                     <Entry x:Name="txtColonia" Placeholder="Las Manzanas" TextColor="Black"
-                           PlaceholderColor="DarkGray" BackgroundColor="Transparent"/>
+                           PlaceholderColor="DarkGray" BackgroundColor="Transparent"/-->
 
                     <Label Text="Dirección" TextColor="Black" />
                     <Entry x:Name="txtDireccion" Placeholder="Calle El Palmar SN" TextColor="Black"
@@ -75,7 +81,7 @@
         </StackLayout>
     </ContentPage.Content>
     
-    <ContentPage.Resources>
+    <!--ContentPage.Resources>
         <ResourceDictionary>
             <x:Array x:Key="Estados" Type="{x:Type x:String}">
                 <x:String>Estado de México</x:String>
@@ -83,6 +89,6 @@
                 <x:String>CDMX</x:String>
             </x:Array>
         </ResourceDictionary>
-    </ContentPage.Resources>
+    </ContentPage.Resources-->
     
 </ContentPage>
